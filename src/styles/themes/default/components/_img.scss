@@ -1,0 +1,61 @@
+.button-category {
+    img{
+        width: 50px;
+        margin: $space-m $space-xs $space-m;
+    }
+    hr{
+        width:$col-8;
+        float: left;
+        border-color: $c-lavender-magenta;
+    }
+}
+.main-end-wrapper_icon{
+    img{
+        width: 8%;
+        margin: 0 46%;
+    }
+} 
+%end-placeholder{
+    img{
+            width: 30px;
+            margin: $space-m $space-xs $space-xs;
+        }
+        hr{
+            width:$col-8;
+            float: left;
+            border-color: $c-lavender-magenta;
+        }
+}
+.end-category-wrapper{
+    &-tech{
+        @extend %end-placeholder;
+    }
+    &-kultura{
+        @extend %end-placeholder;
+    }
+    &-moto{
+        @extend %end-placeholder;
+    }
+    &-prog{
+        @extend %end-placeholder;
+    }
+    &-historia{
+        @extend %end-placeholder;
+    }
+}
+@media only screen and (max-width: $smartphone){
+    .main-header-wrapper_icon img {
+        width: 45%;
+    }
+    .back-close_button img {
+        width: 7%;
+        margin: 5% 1% 0;
+    }
+    .main-end-wrapper_icon img {
+        width: 25%;
+        margin: 0 37%;
+    }
+    .button-category img {
+        width: 37px;
+    }
+}

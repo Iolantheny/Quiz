@@ -1,0 +1,52 @@
+@function pxToRem($pxsize, $rembase: 16){
+    @return ($pxsize / $rembase) + rem;
+}
+
+@mixin myFlex() {
+    $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex);
+    @each $prefix in $prefixes {
+        display: $prefix;
+    }
+}
+
+@mixin FlexOptions($basis: false, $wrap: false, $direction: false) {
+    @if $basis{
+        -ms-flex-preferred-size: $basis;
+        flex-basis: $basis;
+    }
+    @if $wrap{
+        -ms-flex-wrap: $wrap;
+        flex-wrap: $wrap;
+    }
+    @if $direction{
+        -ms-flex-direction: $direction;
+        flex-direction: $direction;
+    }
+}
+
+@mixin center() {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+} 
+
+@mixin shadow($props) {
+    -webkit-box-shadow: $props; 
+    box-shadow: $props;
+}
+
+@mixin background($img, $size: false){
+    background-image: url($img);
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-size: $size;
+}
+@mixin myTransition() {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}

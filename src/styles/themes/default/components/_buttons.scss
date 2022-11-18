@@ -1,0 +1,527 @@
+%button-start-placeholder{
+    @include myFlex();
+    @include center();
+    @include myTransition();
+    width: $col-6;
+    cursor: pointer;
+    border-radius: 8px;
+    max-height: 80px;
+    margin: $space-s auto;
+}
+%button-p-placeholder{
+    float: left;
+    font-family: $f-rajdhani;
+    font-size: pxToRem(24); 
+    color: $c-white;
+}
+%button-start-img-placeholder{
+    width: 20%;
+}
+%button-restart-placeholder{
+    @include myFlex();
+    @include center();
+    @include myTransition();
+    background-size: 400%;
+    background-position: left;
+    width: $col-5;
+    cursor: pointer;
+    padding: 1% $space-xs;
+    border-radius: 8px;
+    max-height: 80px;
+    margin: $space-xs 30% ;
+}
+.button{
+    background: linear-gradient(to right, $c-port-gore, $c-purple-heart, $c-minsk);
+    background-size: 400%;
+    background-position: left;
+    border: 2px solid $c-lilac-bush;
+    border-radius: 15px;
+    width: 160px;
+    color: $c-white;
+    padding: $space-l $space-s $space-xxs;
+    margin: $space-m;
+    @include myFlex();
+    @include FlexOptions($col-12, wrap, column);
+    @include shadow(4px 4px 4px $c-fuchsia-blue);
+    @include myTransition();
+    &:hover{
+        background-position: right;
+        border: 2px solid $c-purple-heart;
+    }
+    p{
+        font-size: pxToRem(20);  
+        margin-top: $space-xxs;
+    }
+}
+.button{
+    &-start{
+        &-tech{
+            button{
+                @extend %button-start-placeholder;
+                background: linear-gradient(to right, $c-scarlet-gum, $c-vivid-violet);
+                background-size: 400%;
+                background-position: left;
+                border: 2px solid $c-fuchsia-blue;
+                @include shadow(4px 4px 4px $c-fuchsia-blue);
+                &:hover{
+                    background-position: right;
+                }
+                p{
+                    @extend %button-p-placeholder;
+                    margin: $space-xs $space-m $space-xs 0;
+                }
+                img{
+                    @extend %button-start-img-placeholder;
+                }
+            }
+        }
+        &-kultura{
+            button{
+                @extend %button-start-placeholder;
+                background: linear-gradient(to right, $c-main-shaft, $c-nobel );
+                background-size: 400%;
+                background-position: left;
+                border: 2px solid $c-main-shaft;
+                @include shadow(4px 4px 4px $c-main-shaft);
+                &:hover{
+                    background-position: right;
+                }
+                p{
+                    @extend %button-p-placeholder;
+                    margin: $space-xs $space-m $space-xs 0;
+                }
+                img{
+                    @extend %button-start-img-placeholder;
+                }
+            }
+        }
+        &-moto{
+            button{
+                @extend %button-start-placeholder;
+                background: linear-gradient(90deg, $c-tolopea 0%, $c-kashmir-blue 100%);
+                background-size: 400%;
+                background-position: left;
+                border: 2px solid $c-white;
+                @include shadow(4px 4px 4px $c-main-shaft);
+                &:hover{
+                    background-position: right;
+                }
+                p{
+                    @extend %button-p-placeholder;
+                    margin: $space-xs $space-m $space-xs 0;
+                }
+                img{
+                    @extend %button-start-img-placeholder;
+                }
+            }
+        }
+        &-prog{
+            button{
+                @extend %button-start-placeholder;
+                background: linear-gradient(90deg, $c-port-gore 0%, $c-minsk 100%);
+                background-size: 400%;
+                background-position: left;
+                border: 2px solid $c-lilac-bush;
+                @include shadow(4px 4px 4px $c-black);
+                &:hover{
+                    background-position: right;
+                }
+                p{
+                    @extend %button-p-placeholder;
+                    margin: $space-xs $space-m $space-xs 0;
+                }
+                img{
+                    @extend %button-start-img-placeholder;
+                }
+            }
+        }
+        &-historia{
+            button{
+                @extend %button-start-placeholder;
+                background: linear-gradient(90deg, $c-birch 0%, $c-barley-corn 100%);
+                background-size: 400%;
+                background-position: left;
+                border: 2px solid $c-white;
+                @include shadow(4px 4px 4px $c-black);
+                &:hover{
+                    background-position: right;
+                    border: 2px solid $c-black;
+                }
+                p{
+                    @extend %button-p-placeholder;
+                    margin: $space-xs $space-m $space-xs 0;
+                }
+                img{
+                    @extend %button-start-img-placeholder;
+                }
+            }
+        }
+    }
+    &-restart{
+        &-tech{
+            button{
+                @extend %button-restart-placeholder;
+                background: linear-gradient(90deg, $c-scarlet-gum 0%, $c-vivid-violet 100%);
+                background-size: 400%;
+                background-position: left;
+                border: 2px solid $c-fuchsia-blue;
+                @include shadow(4px 4px 4px $c-fuchsia-blue);
+                &:hover{
+                    background-position: right;
+                }
+                p{
+                    @extend %button-p-placeholder;
+                }
+                img{
+                    width: 25%;
+                    margin-left: $space-l;
+                }
+            }
+        }
+        &-kultura{
+            button{
+                @extend %button-restart-placeholder;
+                background: linear-gradient(90deg, $c-main-shaft 0%, $c-nobel 100%);
+                background-size: 400%;
+                background-position: left;
+                border: 2px solid $c-main-shaft;
+                @include shadow(4px 4px 4px $c-main-shaft);
+                &:hover{
+                    background-position: right;
+                }
+                p{
+                    @extend %button-p-placeholder;
+                }
+                img{
+                    width: 22%;
+                    margin-left: $space-l;
+                }
+            }
+        }
+        &-moto{
+            button{
+                @extend %button-restart-placeholder;
+                background: linear-gradient(90deg, $c-tolopea 0%, $c-kashmir-blue 100%);
+                background-size: 400%;
+                background-position: left;
+                border: 2px solid $c-white;
+                @include shadow(4px 4px 4px $c-tolopea);
+                &:hover{
+                    background-position: right;
+                }
+                p{
+                    @extend %button-p-placeholder;
+                }
+                img{
+                    width: 22%;
+                    margin-left: $space-l;
+                }
+            }
+        }
+        &-prog{
+            button{
+                @extend %button-restart-placeholder;
+                background: linear-gradient(90deg, $c-port-gore 0%, $c-minsk 100%);
+                background-size: 400%;
+                background-position: left;
+                border: 2px solid $c-lilac-bush;
+                @include shadow(4px 4px 4px $c-black);
+                &:hover{
+                    background-position: right;
+                }
+                p{
+                    @extend %button-p-placeholder;
+                }
+                img{
+                    width: 22%;
+                    margin-left: $space-l;
+                }
+            }
+        }
+        &-historia{
+            button{
+                @extend %button-restart-placeholder;
+                background: linear-gradient(90deg, $c-birch 0%, $c-barley-corn 100%);
+                background-size: 400%;
+                background-position: left;
+                border: 2px solid $c-white;
+                @include shadow(4px 4px 4px $c-black);
+                &:hover{
+                    background-position: right;
+                }
+                p{
+                    @extend %button-p-placeholder;
+                }
+                img{
+                    width: 22%;
+                    margin-left: $space-l;
+                }
+            }
+        }
+    }
+}
+.back-close_button{
+    width: $col-11;
+    img{
+        width: $space-xxs;
+        margin: 1% 1% 0; 
+        float: right;
+    }
+    button{
+        cursor: pointer;
+        background: none;
+        border: none;
+        width: 100%;
+        display: contents;
+    }
+}
+%answers-placeholder{
+    cursor: pointer;
+    color: $c-white;
+    width: 300px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 8px;
+}
+.main-question-wrapper__answer{
+    @include myFlex();
+    @include FlexOptions($col-12, wrap, row);
+    @include center();
+    .tech{
+        @extend %answers-placeholder;
+        background: linear-gradient(90deg, $c-scarlet-gum 0%, $c-vivid-violet 100%);
+        border: 2px solid $c-fuchsia-blue;
+        @include shadow(4px 4px 4px $c-scarlet-gum);
+    }
+    .kultura{
+        @extend %answers-placeholder;
+        background: linear-gradient(90deg, $c-main-shaft 0%, $c-nobel 100%);
+        border: 2px solid $c-main-shaft;
+        @include shadow(4px 4px 4px $c-main-shaft);
+    }
+    .moto{
+        @extend %answers-placeholder;
+        background: linear-gradient(90deg, $c-tolopea 0%, $c-kashmir-blue 100%);
+        border: 2px solid $c-white;
+        @include shadow(4px 4px 4px $c-tolopea);
+    }
+    .prog{
+        @extend %answers-placeholder;
+        background: linear-gradient(90deg, $c-port-gore 0%, $c-minsk 100%);
+        border: 2px solid $c-white;
+        @include shadow(4px 4px 4px $c-port-gore);
+    }
+    .historia{
+        @extend %answers-placeholder;
+        background: linear-gradient(90deg, $c-birch 0%, $c-barley-corn 100%);
+        border: 2px solid $c-white;
+        @include shadow(4px 4px 4px $c-black);
+    }
+}
+
+.correct{
+    .answerResult{
+        background: linear-gradient(90deg, $c-black 0%, $c-forest-green 100%);
+        border: 2px solid $c-forest-green;
+    }
+}
+
+.incorrect{
+    .answerResult{
+        background: linear-gradient(90deg, $c-black 0%, $c-stiletto 100%);
+        border: 2px solid $c-stiletto;
+    }
+}
+%end-button{
+    border-radius: 15px;
+    width: 115px;
+    color: $c-white;
+    padding: $space-l $space-s $space-xxs;
+    margin: $space-l;
+    @include myFlex();
+    @include FlexOptions($col-12, wrap, column);
+    @include myTransition();
+    border: 2px solid $c-white;
+}
+.end-category-wrapper{
+    &-tech div.button{
+        @extend %end-button;
+        background: linear-gradient(to right, $c-purple-heart, $c-downriver);
+        background-size: 400%;
+        background-position: left;
+        @include shadow(4px 4px 4px $c-fuchsia-blue);
+        &:hover{
+            background-position: right;
+        }
+        p{
+            font-size: pxToRem(16);  
+            margin-top: $space-xxs;
+        }
+    }
+    &-kultura div.button{
+        @extend %end-button;
+        background: linear-gradient(to right, $c-main-shaft, $c-nobel);
+        background-size: 400%;
+        background-position: left;
+        @include shadow(4px 4px 4px $c-main-shaft);
+        &:hover{
+            background-position: right;
+        }
+        p{
+            font-size: pxToRem(16);  
+            margin-top: $space-xxs;
+        }
+    }
+    &-moto div.button{
+        @extend %end-button;
+        background: linear-gradient(to right, $c-tolopea, $c-kashmir-blue);
+        background-size: 400%;
+        background-position: left;
+        @include shadow(4px 4px 4px $c-tolopea);
+        &:hover{
+            background-position: right;
+        }
+        p{
+            font-size: pxToRem(16);  
+            margin-top: $space-xxs;
+        }
+    }
+    &-prog div.button{
+        @extend %end-button;
+        background: linear-gradient(to right, $c-port-gore, $c-minsk);  
+        background-size: 400%;
+        background-position: left;
+        @include shadow(4px 4px 4px $c-black);
+        &:hover{
+            background-position: right;
+        }
+        p{
+            font-size: pxToRem(16);  
+            margin-top: $space-xxs;
+        }
+    }
+    &-historia div.button{
+        @extend %end-button;
+        background: linear-gradient(to right, $c-birch, $c-barley-corn );
+        background-size: 400%;
+        background-position: left;
+        @include shadow(4px 4px 4px $c-black);
+        &:hover{
+            background-position: right;
+        }
+        p{
+            font-size: pxToRem(16);  
+            margin-top: $space-xxs;
+        }
+    }
+}
+%drag-drop-answers-placeholder{
+    @include myFlex();
+    @include FlexOptions("", wrap, row);
+    @include center();
+    width: 300px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 8px;
+    color: $c-white;
+}
+.drag-drop-answers{
+    &-tech{
+        @extend %drag-drop-answers-placeholder;
+        background: linear-gradient(90deg, $c-scarlet-gum 0%, $c-vivid-violet 100%);
+        border: 2px solid $c-fuchsia-blue;
+        @include shadow(4px 4px 4px $c-scarlet-gum);
+    }
+    &-kultura{
+        @extend %drag-drop-answers-placeholder;
+        background: linear-gradient(90deg, $c-main-shaft 0%, $c-nobel 100%);
+        border: 2px solid $c-main-shaft;
+        @include shadow(4px 4px 4px $c-main-shaft);
+    }
+    &-moto{
+        @extend %drag-drop-answers-placeholder;
+        background: linear-gradient(90deg, $c-tolopea 0%, $c-kashmir-blue 100%);
+        border: 2px solid $c-white;
+        @include shadow(4px 4px 4px $c-tolopea);
+    }
+    &-prog{
+        @extend %drag-drop-answers-placeholder;
+        background: linear-gradient(90deg, $c-port-gore 0%, $c-minsk 100%);
+        border: 2px solid $c-white;
+        @include shadow(4px 4px 4px $c-port-gore);
+    }
+    &-historia{
+        @extend %drag-drop-answers-placeholder;
+        background: linear-gradient(90deg, $c-birch 0%, $c-barley-corn 100%);
+        border: 2px solid $c-white;
+        @include shadow(4px 4px 4px $c-black);
+    }
+}
+
+@media only screen and (max-width: $laptop-max){
+    %button-p-placeholder{
+        font-size: pxToRem(18); 
+    }
+    %end-button{
+        height: 105px;
+        width: 120px;
+        padding: 16% 10% 2%;
+        margin: 9%;
+    }
+    .button{
+        &-category div.button{
+            width: 125px;
+            p{
+            font-size: pxToRem(18);  
+            }
+        }
+        &-start{
+            &-tech,
+            &-kultura,
+            &-moto,
+            &-prog,
+            &-historia{
+                    button{
+                        img{
+                            width: 24%;
+                            margin-left: 16%;
+                        }
+                    }
+            }
+        }
+        &-restart{
+            &-tech,
+            &-kultura,
+            &-moto,
+            &-prog,
+            &-historia{
+                    button{
+                        img{
+                            width: 24%;
+                            margin-left: 13%;
+                        }
+                    }
+            }
+        }
+    } 
+}
+@media only screen and (max-width: $smartphone){
+    %button-start-placeholder{
+        width: 110%;
+    }
+    %button-restart-placeholder{
+        width: $col-12;
+        margin: $space-s $space-xs;
+    }
+    .button{
+        &-category div.button{
+            width: 100px;
+            p{
+            font-size: pxToRem(14);  
+            }
+        }
+    }
+    .back-close_button{
+        width: $col-9;
+    }
+}

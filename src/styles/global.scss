@@ -1,0 +1,38 @@
+@import './fonts.scss';
+@import './normalize.scss';
+@import './variables.scss';
+
+%wrapper-placeholder{
+    @include myFlex();
+    @include FlexOptions(100%, wrap);
+    @include center();
+    min-height: 100vh;
+}
+.main-wrapper{
+    @extend %wrapper-placeholder;
+    @include FlexOptions(100%, wrap, column);
+    @include background('../assets/img/main_background.png', cover);
+    &_tech{
+        @extend %wrapper-placeholder;
+        @include background('../assets/img/background_technologia.jpg', cover);
+    }
+    &_kultura{
+        @extend %wrapper-placeholder;
+        @include background('../assets/img/background_kultura.jpg', cover);
+    }
+    &_moto{
+        @extend %wrapper-placeholder;
+        @include background('../assets/img/background_moto.png', cover);
+    }
+    &_prog{
+        @extend %wrapper-placeholder;
+        @include background('../assets/img/background_prog.png', cover);
+    }
+    &_historia{
+        @extend %wrapper-placeholder;
+        @include background('../assets/img/background_historia.png', cover);
+    }
+}
+p{
+    font-family: $f-rajdhani;
+}

@@ -1,0 +1,66 @@
+//Colors
+$c-white: #ffff;
+$c-nobel: #b0a6a8;
+$c-main-shaft: #333030;
+$c-black: #000000;
+$c-lavender-magenta: #EF80E8;
+$c-purple-heart: #b61cd9;
+$c-lilac-bush: #8f6cd1;
+$c-fuchsia-blue: #855ABF;
+$c-vivid-violet: #7c308d;
+$c-scarlet-gum: #3d1359;
+$c-mariner: #1d61da;
+$c-kashmir-blue: #4f6b94;
+$c-minsk: #4f2d76;
+$c-port-gore: #4f2d76;
+$c-downriver: #0a1353;
+$c-tolopea: #0f0241;
+$c-forest-green: #348d30;
+$c-salem: #0d9923;
+$c-dark-fern: #103706;
+$c-stiletto: #8d3040;
+$c-barley-corn: #968354;
+$c-birch: #312e1e;
+
+$c-grape-opacity: rgba(54, 29, 98,0.7);
+$c-victoria-opacity: rgba(87, 57, 124, 0.5);
+$c-deluge-opacity: rgba(121, 86, 151, 0.3);
+$c-purpleMountainsMajesty-opacity: rgba(154, 118, 178, 0.3);
+$c-east-side-opcity: rgba(188, 149, 208, 0);
+$c-empress-opacity: rgba(129,121,123,0);
+$c-midGrey-opacity: rgba(95,97,105,0.5);
+$c-tuna-opacity: rgba(41, 41, 44, 0.7);
+$c-celtic-opacity: rgba(23, 65, 30, 0.7);
+$c-racingGreen-opacity: rgba(17, 29, 19, 0.9);
+
+// Fonts
+$f-rajdhani: 'Rajdhani', sans-serif;
+$f-gugi: 'Gugi', cursive;
+$f-mclaren: 'McLaren', cursive;
+
+// Paddings/Margins
+$space-xxs: 2%;
+$space-xs: 5%;
+$space-s: 10%;
+$space-m: 15%;
+$space-l: 20%;
+$space-xl: 25%;
+
+// Sizes
+$col-1: 10%;
+$col-2: 15%;
+$col-3: 25%;
+$col-4: 30%;
+$col-5: 40%;
+$col-6: 50%;
+$col-7: 58%;
+$col-8: 66%;
+$col-9: 75%;
+$col-10: 80%;
+$col-11: 91%;
+$col-12: 100%;
+
+//Device sizes
+$laptop-max: 1024px;
+$tablet-max: 178px;
+$smartphone: 425px;
